@@ -1,0 +1,2 @@
+body{background-attachment:fixed;background-color:#300;background-image:url(/swc-todo/static/media/rose-petals.265b7238c208ceed24dc.svg);background-size:cover;color:#d6d6d6;font-family:Roboto;margin:0;padding:4vh 1vw}.app{display:flex;flex-direction:column;justify-content:space-between;@media screen and (min-width:720px){grid-column-gap:1vw;-webkit-column-gap:1vw;column-gap:1vw;display:grid;grid-template-columns:repeat(4,1fr)}}.app>:not(:last-child){margin-bottom:4vh}
+/*# sourceMappingURL=main.2aaac90d.css.map*/
