@@ -1,0 +1,38 @@
+{
+    "title": "Daily",
+    "items": [
+        {
+            "description": "Chemin de la croissance",
+            "quantity": "6 + refills"
+        },
+        {
+            "description": "Cairos",
+            "quantity": "3 + refills"
+        },
+        {
+            "description": "Raid",
+            "quantity": "3"
+        },
+        {
+            "description": "Raid d'élite",
+            "quantity": "4 soutiens"
+        },
+        {
+            "description": "Chemin de la croissance",
+            "quantity": "6 + refills"
+        },
+        {
+            "description": "Fissure",
+            "quantity": "1"
+        },
+        {
+            "description": "Arène"
+        },
+        {
+            "description": "RTA"
+        },
+        {
+            "description": "Champ de bataille"
+        }
+    ]
+}
