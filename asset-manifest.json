@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6bb36a90.css",
+    "main.js": "/static/js/main.e71c06d6.js",
+    "static/js/787.b3901a5c.chunk.js": "/static/js/787.b3901a5c.chunk.js",
+    "static/media/rose-petals.svg": "/static/media/rose-petals.265b7238c208ceed24dc.svg",
+    "index.html": "/index.html",
+    "main.6bb36a90.css.map": "/static/css/main.6bb36a90.css.map",
+    "main.e71c06d6.js.map": "/static/js/main.e71c06d6.js.map",
+    "787.b3901a5c.chunk.js.map": "/static/js/787.b3901a5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bb36a90.css",
+    "static/js/main.e71c06d6.js"
+  ]
+}
