@@ -1,0 +1,25 @@
+{
+    "title": "Weekly",
+    "items": [
+        {
+            "index": 1,
+            "description": "Raid d'élite",
+            "quantity": "3"
+        },
+        {
+            "index": 2,
+            "description": "Quêtes héro",
+            "quantity": "3"
+        },
+        {
+            "index": 3,
+            "description": "Devilmon arène",
+            "quantity": "1"
+        },
+        {
+            "index": 4,
+            "description": "Journal compétence shop tours",
+            "quantity": "3"
+        }
+    ]
+}

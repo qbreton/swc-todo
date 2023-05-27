@@ -2,37 +2,46 @@
     "title": "Daily",
     "items": [
         {
+            "index": 1,
             "description": "Chemin de la croissance",
             "quantity": "6 + refills"
         },
         {
+            "index": 2,
             "description": "Cairos",
             "quantity": "3 + refills"
         },
         {
+            "index": 3,
             "description": "Raid",
             "quantity": "3"
         },
         {
+            "index": 4,
             "description": "Raid d'élite",
-            "quantity": "4 soutiens"
+            "quantity": "Support"
         },
         {
-            "description": "Chemin de la croissance",
-            "quantity": "6 + refills"
-        },
-        {
+            "index": 5,
             "description": "Fissure",
             "quantity": "1"
         },
         {
+            "index": 6,
             "description": "Arène"
         },
         {
+            "index": 7,
             "description": "RTA"
         },
         {
+            "index": 8,
             "description": "Champ de bataille"
+        },
+        {
+            "index": 9,
+            "description": "Quêtes de guilde",
+            "quantity": "3"
         }
     ]
 }

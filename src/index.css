@@ -1,3 +1,25 @@
 body {
   margin: 0;
+  padding: 4vh 1vw;
+  background-color: #330000;
+  background-image: url('../public/rose-petals.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(214, 214, 214);
+  font-family: Roboto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 720px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1vw;
+  }
+}
+
+.app > *:not(:last-child) {
+  margin-bottom: 4vh;
 }
