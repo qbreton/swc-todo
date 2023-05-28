@@ -1,35 +1,48 @@
 import { useState } from 'react';
 import * as styles from './Checklist.styled';
+import * as dateFns from 'date-fns';
+
+function mergeArraysByIndex(arr1, arr2) {
+    const merged = arr1.reduce((result, obj) => {
+        result[obj.index] = obj;
+        return result;
+    }, {});
+
+    arr2.forEach((obj) => {
+        if (!merged[obj.index]) {
+            obj.checked = false;
+            merged[obj.index] = obj;
+        }
+    });
+
+    return Object.values(merged);
+}
 
 function loadEmptyList(date, type) {
     const today = new Date();
+    const todayDate = today.toISOString().split('T')[0];
     if (type === 'Daily') {
         return today.toISOString().split('T')[0] < today;
     } else if (type === 'Weekly') {
         const startDate = new Date(date);
-        const startOfWeek = new Date(startDate);
-        startOfWeek.setDate(startDate.getDate() - startDate.getDay());
-        const endOfWeek = new Date(startOfWeek);
-        endOfWeek.setDate(startOfWeek.getDate() + 6);
-        return today >= startOfWeek && today <= endOfWeek;
+        const endOfWeek = dateFns.format(dateFns.endOfWeek(startDate, {weekStartsOn: 1}), 'yyyy-MM-dd');
+        return todayDate > endOfWeek;
     } else if (type === 'Monthly') {
-        const currentYear = today.getFullYear();
-        const currentMonth = today.getMonth();
-        const givenYear = parseInt(date.slice(0, 4));
-        const givenMonth = parseInt(date.slice(5, 7)) - 1;
-        return currentYear > givenYear || (currentYear === givenYear && currentMonth > givenMonth);
+        const startDate = new Date(date);
+        const endOfMonth = dateFns.format(dateFns.endOfMonth(startDate), 'yyyy-MM-dd');
+        return todayDate > endOfMonth;
     }
 }
 
 export function Checklist({ checklist }) {
     let localStored = JSON.parse(localStorage.getItem(checklist.title.toLowerCase()));
     let initial = [];
-    console.log(checklist.title, loadEmptyList(localStored.date, checklist.title));
-    if (!localStored || loadEmptyList(localStored.date, checklist.title)) {
+    if (!localStored || !localStored.date || loadEmptyList(localStored.date, checklist.title)) {
         initial = initState(checklist);
     } else {
         initial = localStored.state;
     }
+    initial = mergeArraysByIndex(initial, checklist.items);
     const [listState, setListState] = useState(initial);
 
     function initState(list) {
