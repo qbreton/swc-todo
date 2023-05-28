@@ -42,6 +42,10 @@
             "index": 9,
             "description": "Quêtes de guilde",
             "quantity": "3"
+        },
+        {
+            "index": 10,
+            "description": "Expédition"
         }
     ]
 }

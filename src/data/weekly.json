@@ -3,13 +3,11 @@
     "items": [
         {
             "index": 1,
-            "description": "Raid d'élite",
-            "quantity": "3"
+            "description": "Raid d'élite"
         },
         {
             "index": 2,
-            "description": "Quêtes héro",
-            "quantity": "3"
+            "description": "Quêtes héro"
         },
         {
             "index": 3,
@@ -25,6 +23,15 @@
             "index": 5,
             "description": "Expédition",
             "quantity": "7"
+        },
+        {
+            "index": 6,
+            "description": "Achat transcendance boutique raid"
+        },
+        {
+            "index": 7,
+            "description": "Craft cuir altéré",
+            "quantity": "1"
         }
     ]
 }
