@@ -22,7 +22,7 @@ function loadEmptyList(date, type) {
     const today = new Date();
     const todayDate = today.toISOString().split('T')[0];
     if (type === 'Daily') {
-        return today.toISOString().split('T')[0] < today;
+        return today.toISOString().split('T')[0] > date;
     } else if (type === 'Weekly') {
         const startDate = new Date(date);
         const endOfWeek = dateFns.format(dateFns.endOfWeek(startDate, {weekStartsOn: 1}), 'yyyy-MM-dd');
